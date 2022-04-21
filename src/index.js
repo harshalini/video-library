@@ -3,13 +3,15 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
-
+import { CategoriesProvider } from "./contexts/category-context"
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CategoriesProvider>
+      <App />
+    </CategoriesProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
