@@ -10,10 +10,6 @@ export const Sidebar = () => {
                 <a href="#"><li><i className="sidebar-icon fas fa-history"></i><span>History</span></li></a>
             </ul>
         </aside>
-        <div className="header">
-            <img src="../assets/header-img.svg" className="header-img"></img>
-            <a><i className="explore-btn fas fa-play-circle"></i></a>
-        </div>
         </div>
     )
 }
