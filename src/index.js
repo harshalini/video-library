@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
-import { CategoriesProvider } from "./contexts/category-context"
+import { CategoriesProvider } from "./contexts/allContext"
 // Call make Server
 makeServer();
 

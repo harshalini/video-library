@@ -152,6 +152,9 @@ span.genre-name {
     margin-top: -5rem;
     font-weight: 700;
 }
+.opaque-image {
+    z-index: 9;
+}
 .opaque-image:hover {
     opacity: 100%;
 }
