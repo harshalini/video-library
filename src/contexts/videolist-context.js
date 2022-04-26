@@ -11,7 +11,7 @@ const VideosProvider = ({ children }) => {
           data: { videos }
         } = await axios.get("/api/videos");
         setVideo(videos);
-      } catch {
+      } catch(error) {
         console.error("an error occured");
       }
     })();

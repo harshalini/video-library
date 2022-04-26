@@ -10,7 +10,7 @@ const CategoriesProvider = ({ children }) => {
             data: { categories }
           } = await axios.get("/api/categories");
           setCategory(categories);
-        } catch {
+        } catch(error) {
           console.error("an error occured");
         }
       })();
