@@ -13,7 +13,7 @@ export const Genres = () => {
                         <div className="card-image">
                             <Link to={`/videoListing?categoryName=${categoryName}`}
                                 key={_id}
-                                onClick={() => dispatch({ type: "FILTER-BY-GENRE", payload: categoryName.toLowerCase() })}
+                                onClick={() => dispatch({ type: "FILTER-BY-GENRE", payload: categoryName })}
                             ><img
                                 src={categoryImg} className="opaque-image"></img></Link>
                         </div>
