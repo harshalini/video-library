@@ -12,7 +12,7 @@
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     row-gap: 1rem;
-    margin: 8rem 0 0 15.5rem;
+    margin: 1rem 0 0 15.5rem;
 }
 
 .card-with-badge {
@@ -71,4 +71,30 @@
 }
 .card-with-badge:hover .like-btn {
     visibility: visible;
+}
+.chips-container {
+    margin-top: 6.5rem;
+    margin-left: 14rem;
+}
+.chips-list {
+    display: flex;
+    font-size: 1.2rem;
+}
+.chips-list label {
+    padding: 0.5rem;
+    list-style: none;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: solid 2px var(--white);
+    cursor: pointer;
+    padding-top: 0.3rem;
+}
+.non-active-filter {
+    background-color: var(--card-color);
+}
+.active-filter {
+    background-color: var(--default-pink);
+}
+.chips-list input {
+    display: none;
 }

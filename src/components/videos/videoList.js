@@ -1,9 +1,12 @@
 import { useVideo } from "../../contexts/videolist-context";
+import { GetFilteredVideos } from "../../filter-utils/genreFilter-util";
 export const VideoList = () => {
     const { video } = useVideo();
+    const compose = (...getVideo) =>(video) => getVideo.reduce((data, getVideo) => getVideo(data), video)
+    const filteredVideoList = compose(GetFilteredVideos)(video)
     return (
         <div className="videos-grid">
-            {video.map(({_id, title, creator, views}) => (
+            {filteredVideoList.map(({_id, title, creator, views}) => (
             <div class="ui-component card card-with-badge">
                 <div class="card-image">
                     <img src={`https://img.youtube.com/vi/${_id}/hqdefault.jpg`} />
